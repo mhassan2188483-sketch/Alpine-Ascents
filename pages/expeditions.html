@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Browse mountain trekking and climbing adventures." name="description"/>
+<title>Expeditions | Alpine Ascents</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="../css/style.css" rel="stylesheet"/>
+<link href="../css/auth.css" rel="stylesheet"/>
+<script>(function(){try{var t=localStorage.getItem("aa_theme");document.documentElement.setAttribute("data-theme",t==="light"?"light":"dark");}catch(e){document.documentElement.setAttribute("data-theme","dark");}})();</script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark site-nav">
+  <div class="container">
+    <a class="navbar-brand brand" href="../index.html"><span class="brand-mark"><img src="../images/Logo.png" alt="Alpine Ascents logo"></span> ALPINE<span class="brand-light"> ASCENTS</span></a>
+    <ul class="nav-tools">
+      <li class="nav-item"><button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to light mode" title="Switch to light mode"><span aria-hidden="true">☀</span></button></li>
+      <li class="nav-item" id="authNavItem"></li>
+    </ul>
+    <button aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#mainNav" data-bs-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Learn</a><ul class="dropdown-menu dropdown-menu-dark"><li><a class="dropdown-item" href="history.html">History</a></li><li><a class="dropdown-item" href="types.html">Types &amp; Styles</a></li><li><a class="dropdown-item" href="techniques.html">Techniques</a></li><li><a class="dropdown-item" href="sheltering.html">Sheltering</a></li><li><a class="dropdown-item" href="hazards.html">Hazards</a></li></ul></li>
+        <li class="nav-item"><a class="nav-link" href="records.html">Records</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link active" href="expeditions.html">Expeditions</a></li>
+        <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+        <li class="nav-item"><a class="nav-link" href="clubs.html">Clubs</a></li>
+        <li class="nav-item"><a class="nav-link" href="stories.html">Stories</a></li>
+        <li class="nav-item"><a class="nav-link" href="developments.html">Latest Developments</a></li>
+        <li class="nav-item"><a class="nav-link" href="guidelines.html">Guidelines</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">Our Story</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<header class="page-hero expedition-hero"><div class="container"><p class="eyebrow">FIND YOUR NEXT HORIZON</p><h1>Expeditions for<br/><em>every kind of bold.</em></h1><p>From first high-altitude treks to technical alpine objectives, find a journey that fits your ambitions.</p></div></header>
+<main class="section section-dark"><div class="container">
+<div class="filter-bar"><div><p class="eyebrow mb-1">THE COLLECTION</p><h2>Explore expeditions</h2></div><div aria-label="Filter expeditions" class="filter-buttons" role="group"><button class="filter-btn active" data-filter="all">All trips</button><button class="filter-btn" data-filter="trekking">Trekking</button><button class="filter-btn" data-filter="climbing">Climbing</button><button class="filter-btn" data-filter="high-altitude">High altitude</button></div></div>
+<div class="row g-4 mt-2" id="expeditionGrid">
+<div class="col-md-6 col-lg-4 expedition-item" data-category="high-altitude trekking"><article class="trip-card"><div class="trip-image"><img alt="Snow-covered Himalayan peaks" decoding="async" height="800" loading="lazy" src="https://images.unsplash.com/photo-1778003586047-69c68f764af5?auto=format&amp;fit=crop&amp;w=1400&amp;q=85" width="1200"/><span class="trip-tag">HIGH ALTITUDE</span></div><div class="trip-body"><div class="trip-meta"><span>NEPAL</span><span>5,364 M</span></div><h3>Everest Base Camp</h3><p>The classic Himalayan trek to the foot of the world's highest mountain, through the Sherpa villages of Nepal's Khumbu region.</p><a class="card-link" href="contact.html?trip=Everest%20Base%20Camp">Ask about this trip <span>↗</span></a></div></article></div>
+<div class="col-md-6 col-lg-4 expedition-item" data-category="climbing high-altitude"><article class="trip-card"><div class="trip-image"><img alt="Steep rugged mountain range" decoding="async" height="800" loading="lazy" src="https://images.unsplash.com/flagged/photo-1574945873086-c374f73867ad?auto=format&amp;fit=crop&amp;w=1400&amp;q=85" width="1200"/><span class="trip-tag">ALPINE CLIMB</span></div><div class="trip-body"><div class="trip-meta"><span>ALASKA, USA</span><span>6,190 M</span></div><h3>Denali Expedition</h3><p>North America's highest peak, a serious expedition on snow and ice that demands strong fitness and glacier travel skills.</p><a class="card-link" href="contact.html?trip=Denali%20Expedition">Ask about this trip <span>↗</span></a></div></article></div>
+<div class="col-md-6 col-lg-4 expedition-item" data-category="trekking"><article class="trip-card"><div class="trip-image"><img alt="Mountain landscape in warm evening light" decoding="async" height="800" loading="lazy" src="https://images.unsplash.com/photo-1489392191049-fc10c97e64b6?auto=format&amp;fit=crop&amp;w=1400&amp;q=85" width="1200"/><span class="trip-tag">TREKKING</span></div><div class="trip-body"><div class="trip-meta"><span>TANZANIA</span><span>5,895 M</span></div><h3>Kilimanjaro Trek</h3><p>Africa's highest mountain, climbed on the standard routes through rainforest, moorland and alpine desert without technical climbing.</p><a class="card-link" href="contact.html?trip=Kilimanjaro%20Trek">Ask about this trip <span>↗</span></a></div></article></div>
+<div class="col-md-6 col-lg-4 expedition-item" data-category="climbing high-altitude"><article class="trip-card"><div class="trip-image"><img alt="Mountain summit under a star-filled night sky" decoding="async" height="800" loading="lazy" src="https://images.unsplash.com/photo-1554091740-ecf4a3915cbe?auto=format&amp;fit=crop&amp;w=1400&amp;q=85" width="1200"/><span class="trip-tag">CLIMBING</span></div><div class="trip-body"><div class="trip-meta"><span>ARGENTINA</span><span>6,961 M</span></div><h3>Aconcagua Ascent</h3><p>The highest mountain in the Americas, a high-altitude climb where slow acclimatization is the key to success.</p><a class="card-link" href="contact.html?trip=Aconcagua%20Ascent">Ask about this trip <span>↗</span></a></div></article></div>
+<div class="col-md-6 col-lg-4 expedition-item" data-category="trekking"><article class="trip-card"><div class="trip-image"><img alt="Alpine lake beneath mountain peaks" decoding="async" height="800" loading="lazy" src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&amp;fit=crop&amp;w=1400&amp;q=85" width="1200"/><span class="trip-tag">TREKKING</span></div><div class="trip-body"><div class="trip-meta"><span>ALPS</span><span>170 KM LOOP</span></div><h3>Tour du Mont Blanc</h3><p>A classic hut-to-hut trek of about 170 km that circles the Mont Blanc massif through France, Italy and Switzerland.</p><a class="card-link" href="contact.html?trip=Tour%20du%20Mont%20Blanc">Ask about this trip <span>↗</span></a></div></article></div>
+<div class="col-md-6 col-lg-4 expedition-item" data-category="climbing"><article class="trip-card"><div class="trip-image"><img alt="Rocky mountain peaks and alpine terrain" decoding="async" height="800" loading="lazy" src="https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" width="1200"/><span class="trip-tag">SKILLS + CLIMBING</span></div><div class="trip-body"><div class="trip-meta"><span>WASHINGTON, USA</span><span>4,392 M</span></div><h3>Mount Rainier</h3><p>The most heavily glaciated peak in the contiguous United States, and a classic place to learn glacier travel and rope skills.</p><a class="card-link" href="contact.html?trip=Mount%20Rainier">Ask about this trip <span>↗</span></a></div></article></div>
+</div>
+<p class="fine-print mt-4">Heights and distances are standard published figures. Routes, seasons and conditions change, so always check them with a qualified guide before planning a trip.</p>
+</div></main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <a class="navbar-brand brand" href="../index.html"><span class="brand-mark"><img src="../images/Logo.png" alt="Alpine Ascents logo"></span> ALPINE<span class="brand-light"> ASCENTS</span></a>
+        <p>For the curious. For the committed. For the mountains.</p>
+      </div>
+      <div class="footer-col"><h4>Learn</h4><a href="history.html">History</a><a href="types.html">Types &amp; Styles</a><a href="techniques.html">Techniques</a><a href="sheltering.html">Sheltering</a><a href="hazards.html">Hazards</a><a href="guidelines.html">Guidelines</a></div>
+      <div class="footer-col"><h4>Explore</h4><a href="records.html">Records</a><a href="gallery.html">Gallery</a><a href="expeditions.html">Expeditions</a><a href="courses.html">Courses</a><a href="clubs.html">Clubs</a></div>
+      <div class="footer-col"><h4>Discover</h4><a href="stories.html">Stories</a><a href="developments.html">Latest Developments</a><a href="about.html">Our Story</a><a href="contact.html">Contact</a><a href="login.html">Login</a></div>
+    </div>
+    <div class="footer-bottom"><span>© <span data-year=""></span> Alpine Ascents. Aptech 2606E2 project.</span><span>Built for adventure, designed with purpose.</span></div>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script><script src="../js/main.js"></script>
+<script src="../js/auth.js"></script>
+</body></html>

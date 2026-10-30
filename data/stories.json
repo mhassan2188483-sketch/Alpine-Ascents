@@ -1,0 +1,42 @@
+[
+  {
+    "title": "The 1953 Everest expedition",
+    "place": "NEPAL",
+    "meta": "29 MAY 1953",
+    "tag": "FIRST ASCENT",
+    "image": "images/Just-Everest.avif",
+    "text": "Led by Colonel John Hunt, a large British expedition with about 350 porters and 20 Sherpas supported a small group of climbers. On 29 May 1953, Edmund Hillary and Tenzing Norgay reached the summit of Everest at 11:30 a.m., a success that took the work of the whole team.",
+    "source": "National Geographic",
+    "url": "https://www.nationalgeographic.com/adventure/article/sir-edmund-hillary-tenzing-norgay-1953"
+  },
+  {
+    "title": "Nanga Parbat in winter",
+    "place": "PAKISTAN",
+    "meta": "26 FEB 2016",
+    "tag": "FIRST WINTER ASCENT",
+    "image": "images/avalanche.jpg",
+    "text": "After dozens of failed winter attempts over the years, Simone Moro of Italy, Alex Txikon of Spain and Ali Sadpara of Pakistan reached the summit together after about two and a half months on the mountain. Sadpara became the first Pakistani to summit an 8,000-metre peak in winter.",
+    "source": "American Alpine Journal",
+    "url": "https://publications.americanalpineclub.org/articles/13201213676"
+  },
+  {
+    "title": "All 14 eight-thousanders in 189 days",
+    "place": "HIMALAYA / KARAKORAM",
+    "meta": "APR–OCT 2019",
+    "tag": "RECORD",
+    "image": "photo-1454496522488-7a8e488e8606",
+    "text": "Nirmal Purja and his Nepali team climbed all fourteen 8,000-metre peaks in 6 months and 6 days in 2019, using bottled oxygen. The previous record had stood for nearly eight years. It has since been broken.",
+    "source": "UKClimbing",
+    "url": "https://www.ukclimbing.com/news/2019/10/all_14_x_8000m_peaks_in_189_days_by_nirmal_nims_purja-72114"
+  },
+  {
+    "title": "Ten climbers, one summit: K2 in winter",
+    "place": "PAKISTAN",
+    "meta": "16 JAN 2021",
+    "tag": "FIRST WINTER ASCENT",
+    "image": "images/starry-Mountain.avif",
+    "text": "K2 was the last 8,000-metre peak never climbed in winter. Ten Nepali climbers from three teams worked together, then waited just below the top so that they could take the final steps side by side on 16 January 2021.",
+    "source": "Nepali Times",
+    "url": "https://nepalitimes.com/all-nepali-winter-first-on-k2"
+  }
+]

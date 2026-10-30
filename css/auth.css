@@ -1,0 +1,775 @@
+/* Login / Sign Up – reuses the site's page-hero, contact-form, filter-btn and footer styles */
+.login-hero {
+  background-image: url("../images/starry-Mountain.avif");
+}
+
+/* Tabs use the same look as the Expeditions filter buttons */
+.auth-tabs {
+  margin-bottom: 26px;
+}
+
+.auth-tabs .filter-btn {
+  padding: 11px 22px;
+  transition: .2s ease;
+}
+
+/* Checkbox + validation, themed */
+.form-check-label {
+  color: #cfd6cf;
+  font-size: .86rem;
+}
+
+.form-check-input {
+  background-color: #101513;
+  border-color: #3b4640;
+}
+
+.form-check-input:checked {
+  background-color: var(--accent);
+  border-color: var(--accent);
+}
+
+.form-check-input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 .2rem rgba(217, 183, 123, .15);
+}
+
+.invalid-feedback {
+  font-size: .78rem;
+}
+
+.form-control.is-invalid {
+  border-color: #e07a6b;
+  background-image: none;
+}
+
+.form-control.is-valid {
+  border-color: #6fae85;
+  background-image: none;
+}
+
+/* Password field */
+.pw-wrap {
+  position: relative;
+}
+
+.pw-wrap .form-control {
+  padding-right: 70px;
+}
+
+.pw-toggle {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: 0;
+  color: var(--accent);
+  font-size: .75rem;
+  font-weight: 700;
+  padding: 6px 8px;
+  cursor: pointer;
+}
+
+.pw-meter {
+  height: 3px;
+  background: #2a332e;
+  margin-top: 8px;
+}
+
+.pw-meter span {
+  display: block;
+  height: 100%;
+  width: 0;
+  transition: width .25s ease, background .25s ease;
+}
+
+/* Alert (same look as the contact form message) */
+.auth-alert {
+  display: none;
+  margin-bottom: 20px;
+  padding: 12px 14px;
+  font-size: .87rem;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+}
+
+.auth-alert.show {
+  display: block;
+  animation: authFade .3s ease;
+}
+
+.auth-alert.error {
+  border-color: #e07a6b;
+  color: #f0a597;
+}
+
+.auth-alert.success {
+  border-color: #6fae85;
+  color: #9ad3ae;
+}
+
+@keyframes authFade {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Navbar login state */
+.nav-user {
+  color: #d0d5d0;
+  font-size: .88rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav-user strong {
+  color: var(--accent);
+}
+
+.nav-user button {
+  background: none;
+  border: 1px solid rgba(255, 255, 255, .4);
+  color: #fff;
+  font-size: .8rem;
+  padding: 6px 12px;
+  border-radius: 2px;
+  transition: .2s;
+}
+
+.nav-user button:hover {
+  background: #fff;
+  color: #111;
+}
+
+/* Pull the login/signup page up so it fits without scrolling (desktop) */
+@media (min-width: 992px) {
+  .login-hero {
+    min-height: 0;
+    padding: 28px 0 24px;
+    align-items: flex-start;
+  }
+
+  .login-hero .display-title {
+    font-size: clamp(2rem, 3.2vw, 2.8rem);
+    margin-bottom: 12px;
+  }
+
+  .login-hero .contact-detail {
+    padding: 10px 0;
+  }
+
+  .login-hero .contact-form {
+    padding: 24px;
+  }
+
+  .login-hero .row.g-3 {
+    --bs-gutter-y: .6rem;
+  }
+
+  .login-hero .form-control {
+    min-height: 42px;
+    padding: 8px 12px;
+  }
+}
+
+/* Logged-in avatar: first letter of the name on a navy circle */
+.nav-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #0a2463;
+  /* navy blue: change this to restyle */
+  color: #fff;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  /* light ring so it stands out on the dark navbar */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: default;
+}
+
+/* Visitor count badge in the navbar */
+.visitor-badge {
+  display: inline-block;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  padding: 5px 14px;
+  border-radius: 20px;
+  font-size: 0.82rem;
+  white-space: nowrap;
+}
+
+.visitor-badge strong {
+  color: #fff;
+}
+
+/* Scrolling ticker fixed to the bottom of every page */
+.ticker-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background: #0d1210;
+  color: var(--accent);
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  overflow: hidden;
+  white-space: nowrap;
+  line-height: 40px;
+  font-size: 0.85rem;
+  z-index: 1000;
+}
+
+#ticker {
+  display: inline-block;
+  padding-left: 100%;
+  /* start off-screen on the right */
+  animation: ticker-scroll 25s linear infinite;
+}
+
+@keyframes ticker-scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* Keep the footer from being hidden behind the ticker */
+body {
+  padding-bottom: 40px;
+}
+
+/* ---------- Clubs page ---------- */
+.clubs-hero {
+  background-image: url("../images/forest-Mountain.avif");
+}
+
+#clubMap {
+  height: 540px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  position: relative;
+  z-index: 0;
+  /* keeps map layers below the navbar menu */
+}
+
+.club-list {
+  max-height: 540px;
+  overflow-y: auto;
+  padding-right: 6px;
+}
+
+.club-card {
+  background: #151b18;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-left: 3px solid var(--accent);
+  padding: 14px 16px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.club-card:hover {
+  background: #1d2622;
+}
+
+.club-card h3 {
+  font-size: 1rem;
+  margin: 0 0 4px;
+  color: #fff;
+}
+
+.club-card .club-place {
+  color: var(--accent);
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+}
+
+.club-card p {
+  color: #cfd6cf;
+  font-size: 0.85rem;
+  margin: 8px 0 0;
+}
+
+.club-card .club-km {
+  color: #9ad3ae;
+  font-size: 0.8rem;
+  margin-top: 6px;
+  font-weight: 600;
+}
+
+.club-select {
+  width: auto;
+  background-color: #101513;
+  color: #fff;
+  border-color: #3b4640;
+}
+
+/* ---------- Learn pages ---------- */
+.hero-history {
+  background-image: url("../images/starry-Mountain.avif");
+}
+
+.hero-types {
+  background-image: url("../images/skingmanga.jpg");
+}
+
+.hero-techniques {
+  background-image: url("../images/forest-Mountain.avif");
+}
+
+.hero-sheltering {
+  background-image: url("../images/barren-Cool.avif");
+}
+
+.hero-hazards {
+  background-image: url("../images/Just-Everest.avif");
+}
+
+/* Dropdown menu matches the dark site */
+.dropdown-menu {
+  background: #101513;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.dropdown-item {
+  color: #d0d5d0;
+}
+
+.dropdown-item:hover,
+.dropdown-item.active {
+  background: var(--accent);
+  color: #111;
+}
+
+/* ---------- Records page ---------- */
+.hero-records {
+  background-image: url("../images/road-orange.avif");
+}
+
+.records-table th {
+  color: var(--accent);
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.records-table td {
+  font-size: 0.92rem;
+}
+
+/* ---------- Gallery page ---------- */
+.hero-gallery {
+  background-image: url("../images/Just-Everest.avif");
+}
+
+.gallery-item {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  overflow: hidden;
+  border-radius: 6px;
+  cursor: zoom-in;
+}
+
+.gallery-item img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.06);
+}
+
+.gallery-item span {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 22px 12px 10px;
+  font-size: 0.82rem;
+  color: #fff;
+  text-align: left;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.75));
+}
+
+.video-title {
+  color: #fff;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+/* ---------- Success stories page ---------- */
+.hero-stories {
+  background-image: url("../images/ocean-Mountain.avif");
+}
+/* ---------- Latest developments page ---------- */
+.hero-news {
+  background-image: url("../images/Just-Everest.avif");
+}
+/* ---------- Guidelines page ---------- */
+.hero-guidelines {
+  background-image: url("../images/avalanche.jpg");
+}
+/* Two-row navbar on desktop: logo on top, menu underneath */
+@media (min-width: 992px) {
+  .site-nav > .container { flex-wrap: wrap !important; }
+
+  .site-nav .navbar-collapse {
+    flex-basis: 100%;                                   /* menu takes its own full-width row */
+    margin-top: 8px;
+    padding-top: 6px;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);    /* thin line between the rows */
+  }
+
+  .site-nav .navbar-nav {
+    width: 100%;
+    flex-wrap: wrap;                                    /* extra items drop to another line */
+    justify-content: center;
+    margin: 0 !important;
+  }
+}
+/* Logo image next to the site name */
+.brand-mark img {
+  height: 32px;
+  width: auto;
+  vertical-align: middle;
+}
+
+
+/* ============================================================
+   ALPINE ASCENTS - logo, footer and dark / light mode
+   ============================================================ */
+
+/* ---------- Logo: bigger and rounded ---------- */
+.brand .brand-mark img {
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid var(--accent);
+  vertical-align: middle;
+}
+@media (max-width: 575.98px) {
+  .brand .brand-mark img { width: 40px; height: 40px; }
+}
+
+/* ---------- Dark / light toggle button ---------- */
+.theme-toggle {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: transparent;
+  color: var(--accent);
+  font-size: 1.05rem;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.theme-toggle:hover { background: var(--accent); color: var(--on-accent, #151915); }
+
+/* ---------- Footer ---------- */
+.footer-main {
+  display: grid;
+  grid-template-columns: 1.5fr repeat(3, 1fr);
+  gap: 36px;
+  padding-bottom: 34px;
+}
+.footer-brand p { color: var(--muted); font-size: 0.85rem; margin: 14px 0 0; max-width: 280px; }
+.footer-col h4 {
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+.footer-col a { display: block; color: #c3cbc4; font-size: 0.85rem; padding: 4px 0; }
+.footer-col a:hover { color: var(--accent); }
+@media (max-width: 991.98px) {
+  .footer-main { grid-template-columns: 1fr 1fr 1fr; }
+  .footer-brand { grid-column: 1 / -1; }
+}
+@media (max-width: 575.98px) {
+  .footer-main { grid-template-columns: 1fr 1fr; gap: 26px; }
+}
+
+/* ---------- Light mode ---------- */
+body { transition: background-color 0.25s ease, color 0.25s ease; }
+
+/* Variables used for text that sits on the gold accent colour */
+:root { --on-accent: #151915; --accent-hover: #ebcc95; }
+
+html[data-theme="light"] {
+  --bg: #ebe6d8;
+  --bg-soft: #e0d9c6;
+  --panel: #f4f0e4;
+  --text: #1b2420;
+  --muted: #4f5a54;
+  --accent: #8a5d14;
+  --accent-dark: #6f4a0d;
+  --line: rgba(0, 0, 0, 0.13);
+  --on-accent: #ffffff;
+  --accent-hover: #6f4a0d;
+  color-scheme: light;
+}
+
+/* These areas stay dark in light mode (navbar, footer, photo headers, ticker) */
+html[data-theme="light"] .hero,
+html[data-theme="light"] .page-hero,
+html[data-theme="light"] .quote-band,
+html[data-theme="light"] .trip-tag,
+html[data-theme="light"] .modal-content {
+  --bg: #101513;
+  --bg-soft: #171e1b;
+  --panel: #1b2420;
+  --text: #f5f4ef;
+  --muted: #a7b0a9;
+  --accent: #d9b77b;
+  --accent-dark: #b99559;
+  --line: rgba(255, 255, 255, 0.12);
+  --on-accent: #151915;
+  --accent-hover: #ebcc95;
+  color: var(--text);
+}
+
+/* Buttons and chips that sit on the accent colour */
+.btn-accent { color: var(--on-accent); }
+.btn-accent:hover { background: var(--accent-hover); border-color: var(--accent-hover); color: var(--on-accent); }
+.filter-btn:hover, .filter-btn.active { color: var(--on-accent); }
+.stack-note { color: var(--on-accent); }
+html[data-theme="light"] main:not(.page-hero) .trip-card,
+html[data-theme="light"] main:not(.page-hero) .course-card,
+html[data-theme="light"] main:not(.page-hero) .contact-form,
+html[data-theme="light"] main:not(.page-hero) .principle-card,
+html[data-theme="light"] main:not(.page-hero) .club-card {
+  background: #f5f1e6;
+  border-color: rgba(0, 0, 0, 0.12);
+}
+html[data-theme="light"] main:not(.page-hero) .club-card {
+  border-left-color: var(--accent);
+}
+html[data-theme="light"] main:not(.page-hero) .trip-meta {
+  color: #6b756e;
+}
+html[data-theme="light"] main:not(.page-hero) .body-large {
+  color: #2c3832;
+}
+html[data-theme="light"] main:not(.page-hero) .fine-print,
+html[data-theme="light"] main:not(.page-hero) .form-note {
+  color: #5f6963;
+}
+html[data-theme="light"] main:not(.page-hero) .form-label,
+html[data-theme="light"] main:not(.page-hero) .form-check-label,
+html[data-theme="light"] main:not(.page-hero) .club-card h3,
+html[data-theme="light"] main:not(.page-hero) .video-title {
+  color: var(--text);
+}
+html[data-theme="light"] main:not(.page-hero) .club-card p {
+  color: var(--muted);
+}
+html[data-theme="light"] main:not(.page-hero) .club-km {
+  color: #2d7a4f;
+}
+html[data-theme="light"] main:not(.page-hero) .form-control,
+html[data-theme="light"] main:not(.page-hero) .form-select,
+html[data-theme="light"] main:not(.page-hero) .club-select {
+  background-color: #f8f5ec;
+  color: var(--text);
+  border-color: #c8cdc6;
+}
+html[data-theme="light"] main:not(.page-hero) .form-control:focus,
+html[data-theme="light"] main:not(.page-hero) .form-select:focus {
+  background-color: #f8f5ec;
+  color: var(--text);
+  border-color: var(--accent);
+}
+html[data-theme="light"] main:not(.page-hero) .form-control::placeholder {
+  color: #8a948d;
+}
+html[data-theme="light"] main:not(.page-hero) .form-select option {
+  background: #f8f5ec;
+  color: #1b2420;
+}
+html[data-theme="light"] main:not(.page-hero) .filter-btn {
+  color: var(--text);
+}
+html[data-theme="light"] main:not(.page-hero) .form-check-input {
+  background-color: #f8f5ec;
+  border-color: #9aa39c;
+}
+html[data-theme="light"] main:not(.page-hero) .pw-meter {
+  background: #cfc8b3;
+}
+html[data-theme="light"] main:not(.page-hero) .section .btn-outline-light {
+  border-color: rgba(0, 0, 0, 0.45);
+  color: var(--text);
+}
+html[data-theme="light"] main:not(.page-hero) .section .btn-outline-light:hover {
+  background: var(--text);
+  border-color: var(--text);
+  color: #ffffff;
+}
+html[data-theme="light"] main:not(.page-hero) .table-dark {
+  --bs-table-color: #1b2420;
+  --bs-table-bg: #f5f1e6;
+  --bs-table-border-color: rgba(0, 0, 0, 0.12);
+  --bs-table-striped-bg: #ece7d9;
+  --bs-table-striped-color: #1b2420;
+  --bs-table-active-bg: #ece8dc;
+  --bs-table-active-color: #1b2420;
+  --bs-table-hover-bg: #e8e2d2;
+  --bs-table-hover-color: #1b2420;
+  color: #1b2420;
+  border-color: rgba(0, 0, 0, 0.12);
+}
+
+/* ---------- Light mode: balanced top and bottom ---------- */
+html[data-theme="light"] .site-nav {
+  background: rgba(221, 214, 194, 0.96);
+  border-bottom: 1px solid var(--line);
+}
+html[data-theme="light"] .brand { color: #1b2420 !important; }
+html[data-theme="light"] .brand-light { color: #5d675f; }
+html[data-theme="light"] .nav-link { color: #2a332e !important; }
+html[data-theme="light"] .nav-link:hover,
+html[data-theme="light"] .nav-link.active { color: var(--accent) !important; }
+html[data-theme="light"] .navbar-toggler { border-color: rgba(0, 0, 0, 0.3); }
+html[data-theme="light"] .navbar-toggler-icon { filter: invert(1); }
+html[data-theme="light"] .site-nav .navbar-collapse { border-top-color: var(--line) !important; }
+html[data-theme="light"] .dropdown-menu { background: #f4f0e4; border-color: rgba(0, 0, 0, 0.15); }
+html[data-theme="light"] .dropdown-item { color: #2a332e; }
+html[data-theme="light"] .dropdown-item:hover,
+html[data-theme="light"] .dropdown-item.active { background: var(--accent); color: var(--on-accent); }
+html[data-theme="light"] .visitor-badge strong { color: #1b2420; }
+html[data-theme="light"] .theme-toggle { border-color: rgba(0, 0, 0, 0.35); }
+html[data-theme="light"] .nav-user { color: #2a332e; }
+html[data-theme="light"] .nav-user button { border-color: rgba(0, 0, 0, 0.4); color: #1b2420; }
+html[data-theme="light"] .nav-user button:hover { background: #1b2420; color: #ffffff; }
+
+html[data-theme="light"] .site-footer { background: #d3ccb7; border-top: 1px solid var(--line); }
+html[data-theme="light"] .footer-col a { color: #2f3a34; }
+html[data-theme="light"] .footer-col a:hover { color: var(--accent); }
+html[data-theme="light"] .footer-brand p { color: var(--muted); }
+html[data-theme="light"] .footer-bottom { color: #55605a; }
+
+html[data-theme="light"] .ticker-bar {
+  background: #d3ccb7;
+  color: #6f4a0d;
+  border-top: 1px solid var(--line);
+}
+
+/* Photo headers: lighter overlay, text stays white */
+html[data-theme="light"] .page-hero::before {
+  background: linear-gradient(90deg, rgba(14, 22, 18, 0.74), rgba(14, 22, 18, 0.3));
+}
+html[data-theme="light"] .hero-shade {
+  background: linear-gradient(90deg, rgba(10, 16, 13, 0.72) 0%, rgba(10, 16, 13, 0.4) 48%, rgba(10, 16, 13, 0.04) 100%),
+              linear-gradient(0deg, rgba(10, 16, 13, 0.42), transparent 45%);
+}
+html[data-theme="light"] .quote-band {
+  background: linear-gradient(rgba(14, 22, 18, 0.6), rgba(14, 22, 18, 0.68)),
+              url("https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=2000&q=85") center / cover;
+}
+html[data-theme="light"] .hero h1,
+html[data-theme="light"] .page-hero h1 { text-shadow: 0 2px 18px rgba(0, 0, 0, 0.35); }
+/* Top row: dark/light toggle, visitors and login sit to the right of the logo */
+.site-nav > .container { flex-wrap: wrap; }
+
+.nav-tools {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  list-style: none;
+  margin: 0 0 0 auto;
+  padding: 0;
+  order: 1;
+}
+.site-nav .navbar-toggler { order: 2; margin-left: 10px; }
+.site-nav .navbar-collapse { order: 3; }
+
+@media (max-width: 575.98px) {
+  .site-nav .navbar-toggler { order: 1; margin-left: auto; }
+  .nav-tools { order: 2; flex-basis: 100%; justify-content: flex-end; margin: 8px 0 0; }
+  .site-nav .navbar-collapse { order: 3; }
+}
+/* ---------- FAQ page ---------- */
+.hero-faq {
+  background-image: url("../images/forest-Mountain.avif");
+}
+
+.faq-accordion {
+  --bs-accordion-bg: var(--panel);
+  --bs-accordion-color: var(--muted);
+  --bs-accordion-border-color: var(--line);
+  --bs-accordion-btn-color: var(--text);
+  --bs-accordion-btn-bg: var(--panel);
+  --bs-accordion-active-color: var(--accent);
+  --bs-accordion-active-bg: var(--bg-soft);
+  --bs-accordion-btn-focus-box-shadow: 0 0 0 0.2rem rgba(217, 183, 123, 0.25);
+  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23d9b77b'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  --bs-accordion-btn-active-icon: var(--bs-accordion-btn-icon);
+}
+.faq-accordion .accordion-button { font-weight: 600; }
+.faq-accordion .accordion-body { line-height: 1.7; }
+
+html[data-theme="light"] main:not(.page-hero) .faq-accordion {
+  --bs-accordion-bg: #f5f1e6;
+  --bs-accordion-btn-bg: #f5f1e6;
+  --bs-accordion-border-color: rgba(0, 0, 0, 0.12);
+  --bs-accordion-btn-focus-box-shadow: 0 0 0 0.2rem rgba(138, 93, 20, 0.25);
+  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%238a5d14'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  --bs-accordion-btn-active-icon: var(--bs-accordion-btn-icon);
+}
+.hero-weather {
+  background-image: url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=2000&q=85");
+}
+
+.wx-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+@media (max-width: 991.98px) { .wx-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 575.98px) { .wx-grid { grid-template-columns: 1fr; } }
+
+.wx-mine .wx-card { max-width: 420px; border-left: 3px solid var(--accent); }
+
+.wx-card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 20px;
+}
+.wx-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+.wx-place { font-size: 1.05rem; margin: 0 0 2px; color: var(--text); }
+.wx-elev { font-size: 0.8rem; color: var(--muted); margin: 0; }
+.wx-icon { font-size: 2rem; line-height: 1; }
+.wx-main { display: flex; align-items: baseline; gap: 12px; margin: 14px 0 16px; flex-wrap: wrap; }
+.wx-temp { font-size: 2.6rem; font-weight: 700; line-height: 1; color: var(--text); }
+.wx-cond { color: var(--accent); font-weight: 600; font-size: 0.9rem; }
+.wx-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.wx-stat { border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; display: flex; flex-direction: column; }
+.wx-label { font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
+.wx-value { font-size: 1.05rem; color: var(--text); }
+.wx-foot { font-size: 0.78rem; color: var(--muted); margin: 14px 0 0; }

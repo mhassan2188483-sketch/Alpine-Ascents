@@ -1,0 +1,8 @@
+[
+  { "name": "Everest Base Camp", "country": "Nepal", "lat": 28.0026, "lon": 86.8528, "elevation": 5364 },
+  { "name": "K2 Base Camp", "country": "Pakistan", "lat": 35.7, "lon": 76.5, "elevation": 5150 },
+  { "name": "Nanga Parbat (Fairy Meadows)", "country": "Pakistan", "lat": 35.384, "lon": 74.581, "elevation": 3300 },
+  { "name": "Mont Blanc summit", "country": "France / Italy", "lat": 45.8326, "lon": 6.8652, "elevation": 4806 },
+  { "name": "Kilimanjaro (Uhuru Peak)", "country": "Tanzania", "lat": -3.0674, "lon": 37.3556, "elevation": 5895 },
+  { "name": "Denali summit", "country": "Alaska, USA", "lat": 63.0692, "lon": -151.007, "elevation": 6190 }
+]

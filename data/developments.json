@@ -1,0 +1,17 @@
+[
+  { "title": "Everest has its busiest spring ever", "date": "MAY 2026", "place": "NEPAL", "tag": "RECORDS", "image": "images/crowded-Everest.webp",
+    "text": "Nepal issued a record 494 Everest permits in spring 2026, and nearly 900 climbers and guides had summited by the end of the season. The government also raised the Everest royalty from $11,000 to $15,000 per climber.",
+    "source": "Everest Chronicle", "url": "https://everestchronicle.com/everest-records-busiest-spring-climbing-season-on-record" },
+  { "title": "Skiing down Nanga Parbat", "date": "JUNE 2026", "place": "PAKISTAN", "tag": "SKI MOUNTAINEERING", "image": "images/skingmanga.jpg",
+    "text": "On 30 June 2026, Polish ski mountaineer Andrzej Bargiel skied from the summit of Nanga Parbat all the way to base camp, without supplemental oxygen. Reports called it a historic moment for the sport.",
+    "source": "Alan Arnette", "url": "https://www.alanarnette.com/2026/07/16/k2-2026-weather-delays-small-teams-across-karakorum/" },
+  { "title": "Avalanche on Broad Peak", "date": "JULY 2026", "place": "PAKISTAN", "tag": "SAFETY", "image": "images/avalanche.jpg",
+    "text": "On 30 July 2026, an avalanche struck a ten-member international team on Broad Peak in the Karakoram, and none of the climbers survived. Among them was Nirmal Purja, the Nepali-British mountaineer who was one of the best-known climbers of his generation. The Alpine Club of Pakistan reported on the search and recovery.",
+    "source": "The Quint", "url": "https://www.thequint.com/amp/story/news/breaking-news/veteran-mountaineer-nirmal-purja-body-recovered-avalanche" },
+  { "title": "A summer with no K2 summits", "date": "AUGUST 2026", "place": "PAKISTAN", "tag": "KARAKORAM", "image": "images/melting-Glaciers.webp",
+    "text": "Unusually heavy snowfall through much of July made early rope-fixing on K2 extremely difficult, and the summer ended with no successful summits. Across the Karakoram's 8,000-metre peaks, only a handful of climbers reached a summit all season.",
+    "source": "Snowbrains", "url": "https://snowbrains.com/no-one-summited-k2-brutal-karakoram-season/" },
+  { "title": "Himalayan glaciers are melting faster", "date": "SEPTEMBER 2026", "place": "HIMALAYA", "tag": "CLIMATE", "image": "images/melting-Glaciers2.webp",
+    "text": "A new report by ICIMOD and the G B Pant National Institute of Himalayan Environment says Himalayan glaciers are melting 65 per cent faster than a decade ago. Retreating glaciers create unstable lakes and slopes, so scientists are calling for better monitoring and early-warning systems.",
+    "source": "Online Khabar", "url": "https://english.onlinekhabar.com/himalayan-glaciers-melting-65-per-cent-faster-amid-growing-climate-risks.html" }
+]

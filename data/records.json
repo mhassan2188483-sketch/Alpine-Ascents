@@ -1,0 +1,25 @@
+{
+  "peaks": [
+    { "rank": 1, "name": "Mount Everest", "height": 8849, "country": "Nepal / China", "year": 1953, "climbers": "Edmund Hillary and Tenzing Norgay" },
+    { "rank": 2, "name": "K2", "height": 8611, "country": "Pakistan / China", "year": 1954, "climbers": "Achille Compagnoni and Lino Lacedelli" },
+    { "rank": 3, "name": "Kangchenjunga", "height": 8586, "country": "Nepal / India", "year": 1955, "climbers": "George Band and Joe Brown" },
+    { "rank": 4, "name": "Lhotse", "height": 8516, "country": "Nepal / China", "year": 1956, "climbers": "Ernst Reiss and Fritz Luchsinger" },
+    { "rank": 5, "name": "Makalu", "height": 8485, "country": "Nepal / China", "year": 1955, "climbers": "Jean Couzy and Lionel Terray" },
+    { "rank": 6, "name": "Cho Oyu", "height": 8188, "country": "Nepal / China", "year": 1954, "climbers": "Herbert Tichy, Joseph Jöchler and Pasang Dawa Lama" },
+    { "rank": 7, "name": "Dhaulagiri", "height": 8167, "country": "Nepal", "year": 1960, "climbers": "An international team" },
+    { "rank": 8, "name": "Manaslu", "height": 8163, "country": "Nepal", "year": 1956, "climbers": "Toshio Imanishi and Gyalzen Norbu" },
+    { "rank": 9, "name": "Nanga Parbat", "height": 8126, "country": "Pakistan", "year": 1953, "climbers": "Hermann Buhl" },
+    { "rank": 10, "name": "Annapurna I", "height": 8091, "country": "Nepal", "year": 1950, "climbers": "Maurice Herzog and Louis Lachenal" }
+  ],
+  "firsts": [
+    { "year": 1786, "title": "First ascent of Mont Blanc", "who": "Jacques Balmat and Michel-Gabriel Paccard" },
+    { "year": 1953, "title": "First ascent of Mount Everest", "who": "Edmund Hillary and Tenzing Norgay" },
+    { "year": 1975, "title": "First woman to summit Everest", "who": "Junko Tabei (Japan)" },
+    { "year": 1978, "title": "First ascent of Everest without bottled oxygen", "who": "Reinhold Messner and Peter Habeler" },
+    { "year": 1980, "title": "First solo ascent of Everest", "who": "Reinhold Messner" },
+    { "year": 1986, "title": "First person to climb all 14 eight-thousanders", "who": "Reinhold Messner" },
+    { "year": 2000, "title": "First Pakistani to summit Everest", "who": "Nazir Sabir" },
+    { "year": 2013, "title": "First Pakistani woman to summit Everest", "who": "Samina Baig" },
+    { "year": 2021, "title": "First winter ascent of K2", "who": "A team of ten Nepali climbers" }
+  ]
+}

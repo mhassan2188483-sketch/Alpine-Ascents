@@ -1,0 +1,134 @@
+{
+  "history": [
+    {
+      "title": "The Beginning: Mont Blanc (1786)",
+      "text": "Mountaineering as a sport is usually traced to 1786, when Jacques Balmat and Michel-Gabriel Paccard made the first ascent of Mont Blanc in the Alps. Since then it has gained popularity."
+    },
+    {
+      "title": "The Golden Age of Alpinism (1854-1865)",
+      "text": "In this period climbers reached most of the major Alpine peaks. It ended with the first ascent of the Matterhorn in 1865, when four members of the climbing party died on the descent."
+    },
+    {
+      "title": "The Himalayan Era",
+      "text": "Nanga Parbat was first climbed in 1953 by Hermann Buhl, Mount Everest by Edmund Hillary and Tenzing Norgay in 1953, and K2 by an Italian expedition in 1954. In 1978, Reinhold Messner and Peter Habeler climbed Everest without bottled oxygen."
+    }
+  ],
+  "types": [
+    {
+      "title": "Alpine Style",
+      "text": "A fast, light approach where climbers carry everything with them and go from base to summit in one push, without fixed camps. (Not reccomended for beginners)"
+    },
+    {
+      "title": "Expedition Style",
+      "text": "Used on the highest peaks. Teams set up a series of camps and fixed ropes, moving supplies up gradually so the body can adapt to altitude."
+    },
+    {
+      "title": "Rock Climbing",
+      "text": "Climbing steep rock faces using hands, feet, toes, fingers and protection such as ropes and anchors to protect yourself incase you fall."
+    },
+    {
+      "title": "Ice Climbing",
+      "text": "Climbing frozen waterfalls and glaciers using ice axes and crampons."
+    },
+    {
+      "title": "Ski Mountaineering",
+      "text": "Ascending snowy mountains on skis and descending the same way."
+    }
+  ],
+  "techniques": [
+    {
+      "title": "Roped Travel",
+      "text": "Climbers tie into the same rope so that if one slips, the others can stop the fall."
+    },
+    {
+      "title": "Belaying",
+      "text": "One climber manages the rope for the climber above, ready to lock it if a fall happens."
+    },
+    {
+      "title": "Rappelling (Abseiling)",
+      "text": "Descending a rope in a controlled way using a friction device."
+    },
+    {
+      "title": "Self-Arrest",
+      "text": "If you slip on a snow slope, you roll onto your ice axe and dig it in to stop your slide."
+    },
+    {
+      "title": "Crampon Technique",
+      "text": "Crampons are spikes fixed to the boots. Climbers learn to place all the points flat into snow and ice for grip."
+    }
+  ],
+  "sheltering": [
+    {
+      "title": "Four-Season Tents",
+      "text": "Strong tents built to survive high winds and heavy snow, used at high camps."
+    },
+    {
+      "title": "Mountain Huts",
+      "text": "Simple lodges along popular routes that offer a bed, shelter, and sometimes meals."
+    },
+    {
+      "title": "Snow Caves and Igloos",
+      "text": "Shelters dug or built from snow. Snow is a good insulator, so the inside stays warmer than the outside air."
+    },
+    {
+      "title": "Bivouac",
+      "text": "An emergency or planned overnight stop with minimal gear, such as a bivvy bag, when no tent is available."
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Avalanches",
+      "text": "Sliding masses of snow that can bury climbers. Checking the avalanche forecast and avoiding steep, loaded slopes is essential."
+    },
+    {
+      "title": "Altitude Sickness",
+      "text": "At high altitude there is less oxygen. Symptoms include headache and nausea, and severe cases can be life-threatening. The remedy is to descend and to acclimatize slowly."
+    },
+    {
+      "title": "Hypothermia and Frostbite",
+      "text": "Cold and wind can lower body temperature dangerously and freeze fingers, toes, and the face."
+    },
+    {
+      "title": "Crevasses",
+      "text": "Deep cracks in glaciers, often hidden under snow. Roped travel helps protect against falling in."
+    },
+    {
+      "title": "Rockfall and Sudden Weather",
+      "text": "Loose rock can fall without warning, and mountain weather can change within minutes."
+    }
+  ],
+   "guidelines": [
+    {
+      "title": "Train Before You Go",
+      "text": "Build endurance and leg strength for months beforehand, including long hikes with a loaded pack. Fitness is your first safety margin."
+    },
+    {
+      "title": "Learn the Skills",
+      "text": "Take a course in rope work, navigation, and snow and ice techniques before attempting serious terrain. Do not rely only on a guide."
+    },
+    {
+      "title": "Check Weather and Conditions",
+      "text": "Read the mountain forecast and any avalanche bulletin before and during your trip, and be ready to change plans when conditions turn."
+    },
+    {
+      "title": "Never Climb Alone",
+      "text": "Travel with a team, and tell someone reliable your route and the time you expect to return."
+    },
+    {
+      "title": "Acclimatize Slowly",
+      "text": "Gain altitude gradually and allow rest days. If altitude sickness symptoms get worse, descending is the safest treatment."
+    },
+    {
+      "title": "Carry the Right Gear",
+      "text": "Pack warm layers, a helmet, a headlamp, extra food and water, a first-aid kit, and navigation tools, and check all equipment before you leave."
+    },
+    {
+      "title": "Set a Turnaround Time",
+      "text": "Decide in advance when you will turn back, and keep to it, even if the summit looks close."
+    },
+    {
+      "title": "Respect the Mountain",
+      "text": "Carry out all your waste, respect local communities and wildlife, and leave the place as you found it."
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gallery | Alpine Ascents</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="../css/style.css" rel="stylesheet">
+<link href="../css/auth.css" rel="stylesheet">
+<script>(function(){try{var t=localStorage.getItem("aa_theme");document.documentElement.setAttribute("data-theme",t==="light"?"light":"dark");}catch(e){document.documentElement.setAttribute("data-theme","dark");}})();</script>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark site-nav">
+  <div class="container">
+    <a class="navbar-brand brand" href="../index.html"><span class="brand-mark"><img src="../images/Logo.png" alt="Alpine Ascents logo"></span> ALPINE<span class="brand-light"> ASCENTS</span></a>
+    <ul class="nav-tools">
+      <li class="nav-item"><button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to light mode" title="Switch to light mode"><span aria-hidden="true">☀</span></button></li>
+      <li class="nav-item" id="authNavItem"></li>
+    </ul>
+    <button aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#mainNav" data-bs-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Learn</a><ul class="dropdown-menu dropdown-menu-dark"><li><a class="dropdown-item" href="history.html">History</a></li><li><a class="dropdown-item" href="types.html">Types &amp; Styles</a></li><li><a class="dropdown-item" href="techniques.html">Techniques</a></li><li><a class="dropdown-item" href="sheltering.html">Sheltering</a></li><li><a class="dropdown-item" href="hazards.html">Hazards</a></li></ul></li>
+        <li class="nav-item"><a class="nav-link" href="records.html">Records</a></li>
+        <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="expeditions.html">Expeditions</a></li>
+        <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+        <li class="nav-item"><a class="nav-link" href="clubs.html">Clubs</a></li>
+        <li class="nav-item"><a class="nav-link" href="stories.html">Stories</a></li>
+        <li class="nav-item"><a class="nav-link" href="developments.html">Latest Developments</a></li>
+        <li class="nav-item"><a class="nav-link" href="guidelines.html">Guidelines</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">Our Story</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="page-hero hero-gallery">
+  <div class="container">
+    <p class="eyebrow">GALLERY</p>
+    <h1>The mountains,<br><em>up close.</em></h1>
+    <p>Photos and videos from the world of mountaineering.</p>
+  </div>
+</header>
+
+<main class="section section-dark">
+  <div class="container">
+    <div class="section-heading">
+      <p class="eyebrow">PHOTOS</p>
+      <h2>Views from <em>the heights.</em></h2>
+    </div>
+    <div class="row g-3 mt-2" id="photoGrid"></div>
+
+    <div class="section-heading mt-5">
+      <p class="eyebrow">VIDEOS</p>
+      <h2>Learn by <em>watching.</em></h2>
+    </div>
+    <div class="row g-4 mt-2" id="videoGrid"></div>
+
+    <p class="fine-print mt-4">Photos from Unsplash. Check each image's license before publishing.</p>
+  </div>
+</main>
+
+<!-- Pop-up for the enlarged photo -->
+<div class="modal fade" id="photoModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content bg-dark text-white">
+      <div class="modal-header border-0">
+        <h5 class="modal-title" id="photoTitle"></h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center pt-0">
+        <img id="photoBig" class="img-fluid" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <a class="navbar-brand brand" href="../index.html"><span class="brand-mark"><img src="../images/Logo.png" alt="Alpine Ascents logo"></span> ALPINE<span class="brand-light"> ASCENTS</span></a>
+        <p>For the curious. For the committed. For the mountains.</p>
+      </div>
+      <div class="footer-col"><h4>Learn</h4><a href="history.html">History</a><a href="types.html">Types &amp; Styles</a><a href="techniques.html">Techniques</a><a href="sheltering.html">Sheltering</a><a href="hazards.html">Hazards</a><a href="guidelines.html">Guidelines</a></div>
+      <div class="footer-col"><h4>Explore</h4><a href="records.html">Records</a><a href="gallery.html">Gallery</a><a href="expeditions.html">Expeditions</a><a href="courses.html">Courses</a><a href="clubs.html">Clubs</a></div>
+      <div class="footer-col"><h4>Discover</h4><a href="stories.html">Stories</a><a href="developments.html">Latest Developments</a><a href="about.html">Our Story</a><a href="contact.html">Contact</a><a href="login.html">Login</a></div>
+    </div>
+    <div class="footer-bottom"><span>© <span data-year=""></span> Alpine Ascents. Aptech 2606E2 project.</span><span>Built for adventure, designed with purpose.</span></div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/auth.js"></script>
+<script src="../js/gallery.js"></script>
+</body>
+</html>
